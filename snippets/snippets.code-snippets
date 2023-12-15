@@ -1,0 +1,48 @@
+{
+  "snippets": {
+    "Create Namespace and Class": {
+      "prefix": "cs-model",
+      "body": [
+        "namespace ${RELATIVE_FILEPATH/^([^\\\\\\/]+)[\\\\\\/]|([^\\\\\\/]+)[\\\\\\/]|(?:[^\\\\\\/]+\\.[^\\\\\\/]+)/$1${2:+.}$2/g};",
+        "public class $TM_FILENAME_BASE",
+        "{",
+        "   public ${3:type} ${4:name} {get; set;}"
+        "}"
+      ],
+      "description": "Create Namespace and Class"
+    },
+    "Create Namespace and Enum": {
+      "prefix": "cs-enum",
+      "body": [
+        "namespace ${RELATIVE_FILEPATH/^([^\\\\\\/]+)[\\\\\\/]|([^\\\\\\/]+)[\\\\\\/]|(?:[^\\\\\\/]+\\.[^\\\\\\/]+)/$1${2:+.}$2/g};",
+        "public enum $TM_FILENAME_BASE",
+        "{",
+        "   ${1:EnumName} ${2:EnumValue}"
+        "}"
+      ],
+      "description": "Create Namespace and Enum"
+    },
+    "Create int with get set": {
+      "prefix": "cs-int-getset",
+      "body": [
+        "public int ${4:name} {get; set;}"
+      ],
+      "description": "Create int with get set"
+    },
+    "Create string with get set": {
+      "prefix": "cs-string-getset",
+      "body": [
+        "public string ${4:name} {get; set;}"
+      ],
+      "description": "Create string with get set"
+    },
+    "Create boolean with get set": {
+      "prefix": "cs-bool-getset",
+      "body": [
+        "public bool ${4:name} {get; set;}"
+      ],
+      "description": "Create boolean with get set"
+    },
+
+  }
+}
