@@ -1,0 +1,22 @@
+{
+  "name": "dot-net-snippets",
+  "displayName": "Dot Net Snippets",
+  "description": "",
+  "publisher": "ShishirRegmi",
+  "version": "0.1.0",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "icon": "icon.png",
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "csharp",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  }
+}
